@@ -18,7 +18,7 @@ a {
   color: #ffffff;
 }
 a:hover {
-  color: #3551ee;
+  color: rgb(56, 233, 109);
 }
 
 /* Section Styles */
@@ -27,6 +27,7 @@ a:hover {
   width: 100%;
   
   background: linear-gradient(0deg, rgb(14, 3, 27) 5%, rgb(50, 19, 224) 55%);
+  /* above code taken from: https://www.w3schools.com/css/css3_gradients.asp */
   min-height: 30px;
   padding: 10px;
   position: fixed;
@@ -70,7 +71,7 @@ header .profile-image {
   width: 130px;
   height: 150px;
   border-radius: 50%;
- 
+  border: 3px solid rgb(0, 0, 0);
   transition: all .5s;
 
 }
@@ -118,10 +119,12 @@ ul.skills {
   color: white;
   padding: 20px 20px;
   margin: 15px;
+ 
 }
 
 .skills li:nth-child(odd) {
   background: #52aae6;
+  
 }
 
 footer {
@@ -183,6 +186,25 @@ a.social:hover {
       background: linear-gradient(0deg, rgb(14, 3, 27) 55%, rgb(30, 5, 177) 5%);
   }
 
+  .section {
+    text-align: center; 
+    padding: 20px 40px 40px;
+    margin-top: 0px;
+    font-family:  fantasy;
+    background: rgb(14, 3, 27);
+
+  }
+
+.hobby-text {
+  font-family:  Arial, Helvetica, sans-serif;
+
+}
+
+.link2 {
+  color: rgb(101, 75, 231);
+
+}
+
   header {
     min-height: 450px;
   }
@@ -210,12 +232,13 @@ a.social:hover {
     padding: 20px;    
     background: rgb(0, 0, 0);
     border-color: rgb(255, 255, 255);
+    
   }
 
 }
 
 h3 {
-  color: red;
+  color: rgb(255, 255, 255);
   letter-spacing: 0.5px;
 }
 
@@ -243,3 +266,24 @@ h2 {
 color:rgb(204, 198, 233);
 
   }
+
+  /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Code above is taken from: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+
+.resume {
+  color:rgb(101, 75, 231);
+
+}
