@@ -11,6 +11,9 @@ body {
   color: rgb(0, 0, 0);
   background: #f7f5f0;
 }
+
+
+
 /* Link Styles */
 
 a {
@@ -63,6 +66,30 @@ header {
   overflow: hidden;
   padding-top: 150px;
 }
+
+.main-image {
+  text-align: center;
+  background: url('images/background.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 150px;
+
+}
+
+.dev {
+  border-radius: 50%;
+  border: 3px solid rgb(0, 0, 0);
+  transition: all .5s;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.dev:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+/* Got the above code from: https://www.w3schools.com/howto/howto_css_transition_hover.asp */
+
 header {
   line-height: 1.5;
 }
@@ -73,11 +100,12 @@ header .profile-image {
   border-radius: 50%;
   border: 3px solid rgb(0, 0, 0);
   transition: all .5s;
-
 }
+
 header .profile-image:hover {
   transform: scale(1.2) rotate(360deg);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -158,9 +186,7 @@ a.social {
   background-size: 30px 30px;
   opacity: .5;
   transition: all .25s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
+
 }
 a.linkedin {
   background-image: url(images/linkedin.svg);
@@ -240,6 +266,7 @@ a.social:hover {
 h3 {
   color: rgb(255, 255, 255);
   letter-spacing: 0.5px;
+  text-align: center; 
 }
 
 .card-title {
@@ -249,7 +276,10 @@ h3 {
   margin-top: 20px;
   font-family:  fantasy;
   
-  
+}
+
+.title3 {
+  color: white;
 }
 
 p {
@@ -268,7 +298,7 @@ color:rgb(204, 198, 233);
   }
 
   /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
+.column2 {
   float: left;
   width: 33.33%;
   padding: 5px;
@@ -286,4 +316,79 @@ color:rgb(204, 198, 233);
 .resume {
   color:rgb(101, 75, 231);
 
+}
+
+.resume-details {
+background-color: rgb(0, 0, 0);
+position: relative;
+padding: 20px;
+}
+
+.summary::before {
+  content: '';
+  display: block;
+  width: 15em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: white;
+  opacity: 0.25;
+
+}
+/* above code from: https://www.youtube.com/watch?v=_xkSvufmjEs&t=815s*/
+
+.list2 {
+  color:rgb(255, 255, 255);
+}
+
+.experience {
+  display: inline-block;
+  border: 3px solid rgb(50, 19, 224);
+  justify-content: space-around;
+  margin: 30px;
+  padding: 20px 40px 40px;
+  border-bottom: 20px solid rgb(50, 19, 224);
+  border-radius: 20px;
+  max-width: 1000px;
+  text-align: left;
+}
+
+.experience:hover {
+border-color: rgb(56, 233, 109);
+}
+
+.images {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.row {
+  display: inline-block;
+}
+
+.column {
+  display: inline-block;
+  padding: 20px;
+  margin: 20px;
+  border: 5px solid rgb(50, 19, 224);
+  width: 400px;
+  height: 400px;
+}
+
+.column:hover {
+  border-color: rgb(56, 233, 109);
+}
+
+.img {
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+}
+/* Above code taken from: https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+
+.gallery {
+  display: inline-block;
+  background-color: black;
 }
